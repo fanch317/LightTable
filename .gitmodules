@@ -1,0 +1,4 @@
+[submodule "lib/ESP-AutoUpdater"]
+	path = lib/ESP-AutoUpdater
+	url = git@github.com:fanch317/ESP-AutoUpdater.git
+	branch = master
