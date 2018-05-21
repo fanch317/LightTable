@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <SPI.h>
 
+#include <autoUpdater.h>
+
 extern "C" {
   #include "user_interface.h"
 }
@@ -14,6 +16,7 @@ extern "C" {
 #ifndef PSTR
  #define PSTR // Make Arduino Due happy
 #endif
+
 
 #define PIN 4
 
@@ -65,6 +68,8 @@ void setup() {
     Serial.flush();
     delay(200);
   }
+
+  autoUpdater();
 
 }
 
